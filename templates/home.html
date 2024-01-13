@@ -11,15 +11,25 @@
   </head>
   <body>
     {% include 'nav.html' %}
+    <img class ="img-fluid" id="ban" src="static/banner.jpg">
     <div class = "container">
      <h1 class = "text-center">Ankit Careers</h1>  
-    <img class ="img-fluid" id="ban" src="static/banner.jpg">
+    
 
-    <h2>About Ankit</h2>
+    <div class="row" style="margin-bottom:16px">
+      <div class="col-md-6">
     <p>
 
       Welcome to Ankit's Backend Opportunities Hub, your gateway to exciting career prospects in the world of backend development. This page is dedicated to connecting talented individuals with burgeoning backend roles across diverse industries. Ankit, a burgeoning backend developer himself, curates this platform with a keen eye for the evolving demands of the tech sector. Here, job seekers can explore a curated list of backend development positions ranging from entry-level to senior roles. Ankit's expertise ensures that each opening reflects the latest trends and requirements in backend technologies, including proficiency in languages like Python, Java, and more. Job listings feature reputable companies seeking skilled backend professionals adept at designing scalable and secure systems.
     </p>
+      </div>
+      <div class="d-none d-md-block col-md-6">
+        
+      <img src="static/people.jpg" style="height:320px; border-radius:4px">
+
+      </div>
+    </div>
+      
     <h2 class = "text-center">Open Positions</h2>
     <div>
       {% for job in jobs %}
