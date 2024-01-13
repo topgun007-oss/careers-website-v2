@@ -1,60 +1,34 @@
 <!DOCKTYPE html>
 <html>
   <head>
-    <title>Ankit Careers</title>
-    <style>
-      h1 {
-        font-size: 40px;
-        font-family: Roboto;
-        font-weight: normal;
-        color: rgb(100, 120, 120);
-        text-align: center;
-      }
-
-      #ban {
-        width: 100%;
-        height: 360px;
-        object-fit: cover;
-        
-      }
-      h2{
-        font-family: Roboto;
-        font-size: 32px;
-        text-align: center;
-        font-weight: normal;
-      }
-      p{
-        font-family: Roboto;
-        color:rgb(80,80,80);
-        
-      }
-      #contain{
-        max-width: 720px;
-        margin: 0 auto 0 auto;
-      }
-    </
-      
-      
-    </style>
+    <title class="text-center">Ankit Careers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   
 
     
   </head>
   <body>
-    <div id="contain">
-     <h1>Ankit Careers</h1>  
-    <img id="ban" src="static/banner.jpg">
+    <div class = "container">
+     <h1 class = "text-center">Ankit Careers</h1>  
+    <img class ="img-fluid" id="ban" src="static/banner.jpg">
 
     <h2>About Ankit</h2>
     <p>
 
       Welcome to Ankit's Backend Opportunities Hub, your gateway to exciting career prospects in the world of backend development. This page is dedicated to connecting talented individuals with burgeoning backend roles across diverse industries. Ankit, a burgeoning backend developer himself, curates this platform with a keen eye for the evolving demands of the tech sector. Here, job seekers can explore a curated list of backend development positions ranging from entry-level to senior roles. Ankit's expertise ensures that each opening reflects the latest trends and requirements in backend technologies, including proficiency in languages like Python, Java, and more. Job listings feature reputable companies seeking skilled backend professionals adept at designing scalable and secure systems.
     </p>
-    <h2>Open Positions</h2>
-    <p>
-      TODO
-    </p>
-      <div style = "text-align:center;">
-    <button>Contact Us</button>
+    <h2 class = "text-center">Open Positions</h2>
+    <div>
+      {% for job in jobs %}
+      {% include 'jobitem.html' %}
+    
+      
+      {% endfor %}
+    </div>
+      <div class = "text-center" >
+    <button class="btn btn-primary btn-lg">Contact Us</button>
       </div>
       
       </div>
