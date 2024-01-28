@@ -1,6 +1,6 @@
 # careers-website
 A dynamic job opportunity website is been built 
-using 
+using. 
 tech Stack
 HTML
 CSS
