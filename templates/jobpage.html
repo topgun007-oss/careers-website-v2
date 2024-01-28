@@ -1,0 +1,27 @@
+<!DOCtype html>
+<html>
+  <head>
+    <title>{{job.title}}- Careers </title>
+     {% include 'bootstrap.html' %}
+    
+    
+  </head>
+  <body>
+     {% include 'nav.html' %}
+    <div class = "container">
+       <h1 class = "text-center">Ankit Careers</h1> 
+   
+    <h3>Title</h3>
+    <p>{{job.title}}</p>
+    <h3>Location</h3>
+    <p>{{job.location}}</p>
+    <h3>Salary</h3>
+    <p>{{job.currency}}{{job.salary}}</p>
+    <h3>Responsibilites</h3>
+    <p>{{job.responsibilities}}</p>
+    <h3>Requirements</h3>
+    <p>{{job.requirements}}</p>
+    </div>
+    {%include 'footer.html'%}
+  </body>
+</html>
