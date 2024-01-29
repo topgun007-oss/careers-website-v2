@@ -1,4 +1,4 @@
-# careers-website
+# Dynamic_JOB_PORTAL
 A dynamic job opportunity website is been built 
 using. 
 tech Stack
